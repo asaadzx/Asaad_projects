@@ -22,13 +22,13 @@ export default {
         }
       },
       animation: {
-        'float': 'float 4s ease-in-out infinite',
-        'slide-in': 'slideIn 0.6s ease-out forwards',
-        'fade-in': 'fadeIn 0.8s ease-out forwards',
-        'scale-in': 'scaleIn 0.5s ease-out forwards',
-        'typing': 'typing 2.5s steps(15) forwards, blink 0.8s infinite',
-        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
-        'bounce-subtle': 'bounceSlight 2s infinite',
+        'float': 'float 3s ease-in-out infinite',
+        'slide-in': 'slideIn 0.4s ease-out forwards',
+        'fade-in': 'fadeIn 0.5s ease-out forwards',
+        'scale-in': 'scaleIn 0.3s ease-out forwards',
+        'typing': 'typing 1.8s steps(7) forwards, blink 0.7s infinite',
+        'pulse-glow': 'pulseGlow 1.5s ease-in-out infinite',
+        'bounce-subtle': 'bounceSlight 1.5s infinite',
       },
       keyframes: {
         float: {

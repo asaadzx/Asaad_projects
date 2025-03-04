@@ -14,15 +14,14 @@ export default function App({ Component }: PageProps) {
       </head>
       <body class="bg-gray-900 text-white min-h-screen">
         {/* Cursor glow effect */}
-        <div id="cursor-glow" class="fixed w-40 h-40 rounded-full pointer-events-none mix-blend-screen filter blur-xl opacity-70 bg-accent z-50 hidden"></div>
+        <div id="cursor-glow" class="fixed w-60 h-60 rounded-full pointer-events-none mix-blend-screen filter blur-xl opacity-80 bg-accent-light z-50 hidden animate-pulse-glow"></div>
         
         <div id="particles-js" class="fixed inset-0 z-0"></div>
         <div class="relative z-10">
           <Component />
         </div>
         
-        <script>
-          {`
+        <script dangerouslySetInnerHTML={{__html: `
             // Cursor glow effect
             document.addEventListener('mousemove', function(e) {
               const cursorGlow = document.getElementById('cursor-glow');
@@ -32,6 +31,7 @@ export default function App({ Component }: PageProps) {
                 cursorGlow.classList.remove('hidden');
               }
             });
+        `}} />
             
             document.addEventListener('DOMContentLoaded', function() {
               if (window.particlesJS) {

@@ -25,7 +25,9 @@ export default function Home() {
                 <a href="#projects" class="text-text-muted hover:text-white transition-colors">Projects</a>
               </div>
             </nav>
-            <h1 class="text-5xl md:text-7xl font-bold text-center opacity-0 animate-fade-in">Asaadzx</h1>
+            <div class="overflow-hidden flex justify-center">
+              <h1 class="text-5xl md:text-7xl font-bold text-center overflow-hidden whitespace-nowrap border-r-4 border-text-DEFAULT animate-typing">Asaadzx</h1>
+            </div>
             <p class="text-xl text-center mt-4 text-text-muted opacity-0 animate-fade-in" style="animation-delay: 0.5s;">14-Year-Old Developer</p>
           </header>
 
