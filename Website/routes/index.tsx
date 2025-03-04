@@ -67,13 +67,13 @@ export default function Home() {
 
             {/* Projects Section */}
             <section id="projects" class="mb-20">
-              <h2 class="text-3xl font-bold mb-8 text-center opacity-0 animate-fade-in" style="animation-delay: 0.6s;">
+              <h2 class="text-3xl font-bold mb-8 text-center opacity-0 animate-fade-in" style={{animationDelay: "0.6s"}}>
                 {/* Project section comment: Displaying my latest projects with interactive elements */}
                 My Projects
               </h2>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
                 {/* Project Card 1 - Pixel Adventure */}
-                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.7s;">
+                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style={{animationDelay: "0.7s"}}>
                   <div class="aspect-video bg-accent/30 flex items-center justify-center relative group overflow-hidden">
                     {/* Image placeholder - you'll add your own image here */}
                     <div class="w-full h-full">
@@ -147,7 +147,7 @@ export default function Home() {
             </section>
 
             {/* Links Section */}
-            <section class="opacity-0 animate-fade-in" style="animation-delay: 1.8s;">
+            <section class="opacity-0 animate-fade-in" style={{animationDelay: "1.8s"}}>
               <h2 class="text-3xl font-bold mb-8 text-center">Find Me Online</h2>
               <div class="flex flex-wrap justify-center gap-6">
                 <a href="https://github.com/asaadzx" target="_blank" rel="noopener noreferrer" 

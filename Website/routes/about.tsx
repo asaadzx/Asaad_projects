@@ -55,7 +55,7 @@ export default function About() {
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div class="bg-primary-light rounded-2xl p-8 shadow-xl border border-accent/20 opacity-0 animate-slide-in" style="animation-delay: 0.3s;">
+              <div class="bg-primary-light rounded-2xl p-8 shadow-xl border border-accent/20 opacity-0 animate-slide-in" style={{animationDelay: "0.3s"}}>
                 <h2 class="text-2xl font-bold mb-4 text-white">My Skills</h2>
                 <ul class="space-y-4">
                   <li class="flex items-center">
