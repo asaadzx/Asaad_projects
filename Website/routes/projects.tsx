@@ -62,7 +62,7 @@ export default function Projects() {
       <Head>
         <title>Projects | Asaadzx</title>
       </Head>
-      <div class="page-container min-h-screen bg-gradient-to-b from-blue-900 via-purple-900 to-indigo-900 text-white"> {/* Added class for better styling and semantic meaning */}
+      <div className="page-container min-h-screen bg-gradient-to-b from-blue-900 via-purple-900 to-indigo-900 text-white"> {/* Added class for better styling and semantic meaning */}
         <header class="site-header container mx-auto px-4 py-8"> {/* Added class for better styling and semantic meaning */}
           <nav class="nav-container flex justify-between items-center"> {/* Added class for better styling and semantic meaning */}
             <a href="/" class="site-title text-2xl font-bold">Asaadzx</a>
