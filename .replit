@@ -1,5 +1,6 @@
+
 modules = ["web", "deno-2"]
-run = "deno task start"
+run = "cd Website && deno task start"
 
 [nix]
 channel = "stable-24_05"
@@ -17,15 +18,3 @@ author = 40125466
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "cd Website && deno task start"
-
-[[ports]]
-localPort = 8000
-externalPort = 80
-
-[[ports]]
-localPort = 8001
-externalPort = 3000
-
-[[ports]]
-localPort = 8002
-externalPort = 3001

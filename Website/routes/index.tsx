@@ -17,7 +17,7 @@ export default function Home() {
         {/* Content */}
         <div class="relative z-10">
           <header class="container mx-auto px-4 py-8">
-            <nav class="flex justify-between items-center mb-12">
+            <nav class="flex justify-between items-center mb-12 sticky top-0 z-50 backdrop-blur-lg bg-primary/50 border-b border-accent/20 shadow-lg">
               <a href="/" class="text-2xl font-bold text-white">Asaadzx</a>
               <div class="flex gap-6">
                 <a href="/" class="text-white font-medium border-b-2 border-accent">Home</a>
@@ -81,8 +81,8 @@ export default function Home() {
                         <span class="px-2 py-1 bg-primary text-xs rounded">Godot</span>
                         <span class="px-2 py-1 bg-primary text-xs rounded">GDScript</span>
                       </div>
-                      <a href="#" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg">
-                        See Project
+                      <a href="#" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-accent/50">
+                        View Project
                       </a>
                     </div>
                   </div>
@@ -102,8 +102,8 @@ export default function Home() {
                         <span class="px-2 py-1 bg-primary text-xs rounded">Python</span>
                         <span class="px-2 py-1 bg-primary text-xs rounded">TensorFlow</span>
                       </div>
-                      <a href="#" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg">
-                        See Project
+                      <a href="#" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-accent/50">
+                        View Project
                       </a>
                     </div>
                   </div>
@@ -123,8 +123,8 @@ export default function Home() {
                         <span class="px-2 py-1 bg-primary text-xs rounded">Fresh</span>
                         <span class="px-2 py-1 bg-primary text-xs rounded">Tailwind</span>
                       </div>
-                      <a href="#" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg">
-                        See Project
+                      <a href="#" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-accent/50">
+                        View Project
                       </a>
                     </div>
                   </div>

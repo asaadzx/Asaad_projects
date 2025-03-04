@@ -23,13 +23,16 @@ export default function App({ Component }: PageProps) {
         
         <script dangerouslySetInnerHTML={{__html: `
             // Cursor glow effect
-            document.addEventListener('mousemove', function(e) {
+            window.addEventListener('DOMContentLoaded', () => {
               const cursorGlow = document.getElementById('cursor-glow');
+              
+              document.addEventListener('mousemove', function(e) {
               if (cursorGlow) {
                 cursorGlow.style.left = (e.clientX - 80) + 'px';
                 cursorGlow.style.top = (e.clientY - 80) + 'px';
                 cursorGlow.classList.remove('hidden');
               }
+            });
             });
         `}} />
             
