@@ -54,7 +54,7 @@ export default function Home() {
                 <div class="relative mx-auto w-64 h-64">
                   <div class="absolute inset-0 bg-gradient-to-r from-accent to-accent-light rounded-full blur-xl opacity-30 animate-pulse"></div>
                   <div class="relative bg-primary-light border-2 border-accent overflow-hidden rounded-full w-full h-full flex items-center justify-center">
-                  <img src="images/me.png" alt="" />
+                  <img src="images/Best_gecko.jpg" alt="" />
                   </div>
                 </div>
               </div>
