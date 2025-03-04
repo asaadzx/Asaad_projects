@@ -1,34 +1,41 @@
 
 import { Head } from "$fresh/runtime.ts";
 
-export default function Error404() {
+export default function NotFoundPage() {
   return (
     <>
       <Head>
-        <title>404 - Page not found | Asaadzx</title>
+        <title>404 - Page Not Found | Asaadzx</title>
       </Head>
-      <div class="min-h-screen bg-primary text-text-DEFAULT flex flex-col items-center justify-center px-4 py-8">
+      <div class="min-h-screen bg-primary text-text-DEFAULT">
         {/* Background elements */}
         <div class="fixed inset-0 z-0 overflow-hidden">
-          <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-accent/20 rounded-full filter blur-3xl animate-float"></div>
-          <div class="absolute bottom-1/3 right-1/3 w-48 h-48 bg-accent-light/20 rounded-full filter blur-3xl animate-float" style="animation-delay: 2s;"></div>
+          <div class="absolute top-20 left-10 w-48 h-48 bg-accent/20 rounded-full filter blur-3xl animate-float"></div>
+          <div class="absolute bottom-20 right-10 w-64 h-64 bg-accent-light/20 rounded-full filter blur-3xl animate-float" style="animation-delay: 2s;"></div>
         </div>
-
-        <div class="relative z-10 text-center opacity-0 animate-fade-in">
-          <h1 class="text-6xl font-bold mb-4 text-white">404</h1>
-          <div class="relative mb-8">
-            <div class="absolute -inset-0.5 bg-gradient-to-r from-accent to-accent-light rounded-full blur opacity-75 animate-pulse"></div>
-            <div class="relative mx-auto w-32 h-32 bg-primary-light border-2 border-accent overflow-hidden rounded-full flex items-center justify-center">
-              <span class="text-5xl">🔍</span>
+        
+        {/* Content */}
+        <div class="relative z-10">
+          {/* Glass navbar - sticky top */}
+          <nav class="sticky top-0 backdrop-blur-lg bg-primary-light/60 border-b border-accent/20 shadow-lg px-4 py-4 flex justify-between items-center z-50">
+            <a href="/" class="text-2xl font-bold text-white">Asaadzx</a>
+            <div class="flex gap-6">
+              <a href="/" class="text-text-muted hover:text-white transition-colors">Home</a>
+              <a href="/about" class="text-text-muted hover:text-white transition-colors">About</a>
+              <a href="/#projects" class="text-text-muted hover:text-white transition-colors">Projects</a>
             </div>
-          </div>
-          <h2 class="text-3xl font-bold mb-4 text-white">Page not found</h2>
-          <p class="text-xl mb-8 text-text-muted">
-            Oops! The page you're looking for doesn't exist.
-          </p>
-          <a href="/" class="inline-block bg-accent hover:bg-accent-light px-6 py-3 rounded-xl transition-all duration-300 text-white font-bold transform hover:scale-105 shadow-lg">
-            Return to Home
-          </a>
+          </nav>
+          
+          <main class="container mx-auto px-4 py-20 flex flex-col items-center justify-center min-h-[70vh]">
+            {/* 404 content with animations */}
+            <h1 class="text-8xl font-bold mb-4 text-accent animate-pulse-glow">404</h1>
+            <p class="text-2xl mb-8 opacity-0 animate-fade-in">Page not found</p>
+            <div class="opacity-0 animate-scale-in" style="animation-delay: 0.5s;">
+              <a href="/" class="px-8 py-3 bg-accent hover:bg-accent-light rounded-full text-white font-bold transition-all transform hover:scale-105 shadow-lg">
+                Back to Home
+              </a>
+            </div>
+          </main>
         </div>
       </div>
     </>

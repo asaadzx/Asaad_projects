@@ -13,12 +13,26 @@ export default function App({ Component }: PageProps) {
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
       </head>
       <body class="bg-gray-900 text-white min-h-screen">
+        {/* Cursor glow effect */}
+        <div id="cursor-glow" class="fixed w-40 h-40 rounded-full pointer-events-none mix-blend-screen filter blur-xl opacity-70 bg-accent z-50 hidden"></div>
+        
         <div id="particles-js" class="fixed inset-0 z-0"></div>
         <div class="relative z-10">
           <Component />
         </div>
+        
         <script>
           {`
+            // Cursor glow effect
+            document.addEventListener('mousemove', function(e) {
+              const cursorGlow = document.getElementById('cursor-glow');
+              if (cursorGlow) {
+                cursorGlow.style.left = (e.clientX - 80) + 'px';
+                cursorGlow.style.top = (e.clientY - 80) + 'px';
+                cursorGlow.classList.remove('hidden');
+              }
+            });
+            
             document.addEventListener('DOMContentLoaded', function() {
               if (window.particlesJS) {
                 particlesJS('particles-js', {

@@ -22,10 +22,13 @@ export default {
         }
       },
       animation: {
-        'float': 'float 6s ease-in-out infinite',
-        'slide-in': 'slideIn 1s ease-out forwards',
-        'fade-in': 'fadeIn 1.5s ease-out forwards',
-        'scale-in': 'scaleIn 0.8s ease-out forwards',
+        'float': 'float 4s ease-in-out infinite',
+        'slide-in': 'slideIn 0.6s ease-out forwards',
+        'fade-in': 'fadeIn 0.8s ease-out forwards',
+        'scale-in': 'scaleIn 0.5s ease-out forwards',
+        'typing': 'typing 2.5s steps(15) forwards, blink 0.8s infinite',
+        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+        'bounce-subtle': 'bounceSlight 2s infinite',
       },
       keyframes: {
         float: {
@@ -43,6 +46,22 @@ export default {
         scaleIn: {
           '0%': { transform: 'scale(0.8)', opacity: '0' },
           '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+        typing: {
+          '0%': { width: '0' },
+          '100%': { width: '100%' },
+        },
+        blink: {
+          '0%, 100%': { borderRightColor: 'transparent' },
+          '50%': { borderRightColor: '#e0e1dd' },
+        },
+        pulseGlow: {
+          '0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
+          '50%': { opacity: '1', transform: 'scale(1.05)' },
+        },
+        bounceSlight: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
         },
       },
     },

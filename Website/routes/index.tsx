@@ -1,4 +1,3 @@
-
 import { Head } from "$fresh/runtime.ts";
 
 export default function Home() {
@@ -29,7 +28,7 @@ export default function Home() {
             <h1 class="text-5xl md:text-7xl font-bold text-center opacity-0 animate-fade-in">Asaadzx</h1>
             <p class="text-xl text-center mt-4 text-text-muted opacity-0 animate-fade-in" style="animation-delay: 0.5s;">14-Year-Old Developer</p>
           </header>
-          
+
           <main class="container mx-auto px-4 py-8">
             {/* Hero Section */}
             <section class="flex flex-col md:flex-row items-center justify-between mb-20 gap-10">
@@ -60,57 +59,78 @@ export default function Home() {
             </section>
 
             {/* Projects Section */}
-            <section id="projects" class="mb-20 scroll-mt-20">
-              <h2 class="text-3xl font-bold mb-8 text-center opacity-0 animate-fade-in" style="animation-delay: 0.8s;">My Projects</h2>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {/* Project 1 */}
-                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in" style="animation-delay: 1s;">
-                  <div class="h-48 bg-gradient-to-r from-accent to-accent-light flex items-center justify-center">
-                    <span class="text-4xl">🎮</span>
+            <section id="projects" class="mb-20">
+              <h2 class="text-3xl font-bold mb-8 text-center opacity-0 animate-fade-in" style="animation-delay: 0.6s;">
+                {/* Project section comment: Displaying my latest projects with interactive elements */}
+                My Projects
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+                {/* Project Card 1 - Pixel Adventure */}
+                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.7s;">
+                  <div class="aspect-video bg-accent/30 flex items-center justify-center relative group">
+                    <span class="text-4xl animate-bounce-subtle">🎮</span>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div class="p-6">
                     <h3 class="text-xl font-bold mb-2 text-white">Adventure Game</h3>
                     <p class="text-text-muted mb-4">A 2D adventure game made with Godot Engine featuring pixel art graphics and unique gameplay mechanics.</p>
-                    <div class="flex items-center gap-2">
-                      <span class="px-2 py-1 bg-primary text-xs rounded">Godot</span>
-                      <span class="px-2 py-1 bg-primary text-xs rounded">GDScript</span>
+                    <div class="flex justify-between items-end">
+                      <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-primary text-xs rounded">Godot</span>
+                        <span class="px-2 py-1 bg-primary text-xs rounded">GDScript</span>
+                      </div>
+                      <a href="#" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg">
+                        See Project
+                      </a>
                     </div>
                   </div>
                 </div>
-                
-                {/* Project 2 */}
-                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in" style="animation-delay: 1.2s;">
-                  <div class="h-48 bg-gradient-to-r from-accent-light to-accent flex items-center justify-center">
-                    <span class="text-4xl">🤖</span>
+
+                {/* Project Card 2 - AI Chat Assistant */}
+                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.8s;">
+                  <div class="aspect-video bg-accent/30 flex items-center justify-center relative group">
+                    <span class="text-4xl animate-bounce-subtle">🤖</span>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div class="p-6">
                     <h3 class="text-xl font-bold mb-2 text-white">AI Learning Assistant</h3>
                     <p class="text-text-muted mb-4">A Python-based AI application that helps students learn programming concepts through interactive exercises.</p>
-                    <div class="flex items-center gap-2">
-                      <span class="px-2 py-1 bg-primary text-xs rounded">Python</span>
-                      <span class="px-2 py-1 bg-primary text-xs rounded">TensorFlow</span>
+                    <div class="flex justify-between items-end">
+                      <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-primary text-xs rounded">Python</span>
+                        <span class="px-2 py-1 bg-primary text-xs rounded">TensorFlow</span>
+                      </div>
+                      <a href="#" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg">
+                        See Project
+                      </a>
                     </div>
                   </div>
                 </div>
-                
-                {/* Project 3 */}
-                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in" style="animation-delay: 1.4s;">
-                  <div class="h-48 bg-gradient-to-r from-accent to-accent-light flex items-center justify-center">
-                    <span class="text-4xl">🌐</span>
+
+                {/* Project Card 3 - Personal Website */}
+                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.9s;">
+                  <div class="aspect-video bg-accent/30 flex items-center justify-center relative group">
+                    <span class="text-4xl animate-bounce-subtle">🌐</span>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div class="p-6">
                     <h3 class="text-xl font-bold mb-2 text-white">Personal Website</h3>
                     <p class="text-text-muted mb-4">My personal portfolio website built with modern web technologies, featuring responsive design.</p>
-                    <div class="flex items-center gap-2">
-                      <span class="px-2 py-1 bg-primary text-xs rounded">Fresh</span>
-                      <span class="px-2 py-1 bg-primary text-xs rounded">Tailwind</span>
+                    <div class="flex justify-between items-end">
+                      <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-primary text-xs rounded">Fresh</span>
+                        <span class="px-2 py-1 bg-primary text-xs rounded">Tailwind</span>
+                      </div>
+                      <a href="#" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg">
+                        See Project
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-              
-              <div class="mt-12 text-center opacity-0 animate-fade-in" style="animation-delay: 1.6s;">
-                <a href="#" class="inline-block px-8 py-3 bg-accent hover:bg-accent-light rounded-full text-white font-bold transition-all transform hover:scale-105 shadow-lg">
+
+              <div class="mt-12 text-center opacity-0 animate-fade-in" style="animation-delay: 1s;">
+                <a href="#" class="inline-block px-8 py-3 bg-accent hover:bg-accent-light rounded-full text-white font-bold transition-all transform hover:scale-105 shadow-lg animate-pulse-glow">
                   View All Projects
                 </a>
               </div>
@@ -138,7 +158,7 @@ export default function Home() {
               </div>
             </section>
           </main>
-          
+
           <footer class="container mx-auto px-4 py-8 text-center text-text-muted border-t border-accent/10 mt-12">
             <p>© 2023 Asaadzx | Young Developer & Creator</p>
           </footer>

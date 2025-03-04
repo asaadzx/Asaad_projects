@@ -16,28 +16,37 @@ export default function About() {
 
         {/* Content */}
         <div class="relative z-10">
-          <header class="container mx-auto px-4 py-8">
-            <nav class="flex justify-between items-center mb-12">
-              <a href="/" class="text-2xl font-bold text-white">Asaadzx</a>
-              <div class="flex gap-6">
-                <a href="/" class="text-text-muted hover:text-white transition-colors">Home</a>
-                <a href="/about" class="text-white font-medium border-b-2 border-accent">About</a>
-                <a href="/#projects" class="text-text-muted hover:text-white transition-colors">Projects</a>
-              </div>
-            </nav>
+          {/* Glass navbar - sticky top */}
+          <nav class="sticky top-0 backdrop-blur-lg bg-primary-light/60 border-b border-accent/20 shadow-lg px-4 py-4 flex justify-between items-center z-50">
+            <a href="/" class="text-2xl font-bold text-white">Asaadzx</a>
+            <div class="flex gap-6">
+              <a href="/" class="text-text-muted hover:text-white transition-colors">Home</a>
+              <a href="/about" class="text-white font-medium border-b-2 border-accent">About</a>
+              <a href="/#projects" class="text-text-muted hover:text-white transition-colors">Projects</a>
+            </div>
+          </nav>
+          
+          <header class="container mx-auto px-4 py-8 mt-6">
+            {/* About page header - adding comments as requested */}
           </header>
           
           <main class="container mx-auto px-4 py-8">
+            {/* Main heading with animation */}
             <h1 class="text-4xl font-bold mb-12 text-center opacity-0 animate-fade-in">About Me</h1>
             
-            <div class="bg-primary-light rounded-2xl p-8 shadow-xl border border-accent/20 mb-12 opacity-0 animate-slide-in">
-              <h2 class="text-2xl font-bold mb-4 text-white">Who Am I?</h2>
-              <p class="text-lg mb-4">
+            {/* About me section with border glow effect */}
+            <div class="bg-primary-light rounded-2xl p-6 md:p-8 shadow-xl border border-accent/20 mb-12 opacity-0 animate-slide-in relative overflow-hidden">
+              {/* Decorative background element */}
+              <div class="absolute -right-20 -bottom-20 w-40 h-40 bg-accent/10 rounded-full filter blur-xl"></div>
+              
+              <h2 class="text-2xl font-bold mb-4 text-white relative z-10">Who Am I?</h2>
+              <p class="text-base md:text-lg mb-4 relative z-10">
+                {/* Personal introduction with skills highlight */}
                 Hi there! I'm Asaadzx, a 14-year-old developer passionate about coding and creating cool things with technology.
                 I started my programming journey when I was 12, and since then, I've been exploring different programming languages 
                 and platforms to build interesting projects.
               </p>
-              <p class="text-lg">
+              <p class="text-base md:text-lg relative z-10">
                 My journey in programming has been exciting, challenging, and rewarding. I'm constantly learning new things
                 and pushing myself to become a better developer. I believe that age is just a number when it comes to
                 creating amazing things with code!
