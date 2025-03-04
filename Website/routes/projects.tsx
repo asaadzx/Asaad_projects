@@ -1,4 +1,3 @@
-
 import { Head } from "$fresh/runtime.ts";
 
 export default function Projects() {
@@ -69,11 +68,11 @@ export default function Projects() {
             </div>
           </nav>
         </header>
-        
+
         <main class="container mx-auto px-4 py-8">
           <h1 class="text-4xl font-bold mb-2 text-center animate__animated animate__fadeInDown">My Projects</h1>
           <p class="text-xl text-center mb-12 animate__animated animate__fadeIn">Check out what I've been working on!</p>
-          
+
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {projects.map((project, index) => (
               <div key={project.title} class={`bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-xl border border-white/20 hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl animate__animated animate__fadeInUp animate__delay-${index % 3}s`}>
@@ -116,7 +115,7 @@ export default function Projects() {
               </div>
             ))}
           </div>
-          
+
           <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20 mb-12 animate__animated animate__fadeInUp animate__delay-1s">
             <h2 class="text-2xl font-bold mb-4">Want to collaborate?</h2>
             <p class="mb-6">
@@ -128,7 +127,7 @@ export default function Projects() {
             </a>
           </div>
         </main>
-        
+
         <footer class="container mx-auto px-4 py-8 text-center text-white/60">
           <p>© 2023 Asaadzx | Young Developer & Creator</p>
         </footer>

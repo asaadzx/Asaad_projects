@@ -29,7 +29,7 @@ export default function Home() {
             <div class="overflow-hidden flex justify-center">
               <h1 class="text-5xl md:text-7xl font-bold text-center overflow-hidden whitespace-nowrap border-r-4 border-text-DEFAULT animate-typing">Asaadzx</h1>
             </div>
-            <p class="text-xl text-center mt-4 text-text-muted opacity-0 animate-fade-in" style="animation-delay: 0.5s;">14-Year-Old Developer</p>
+            <p class="text-xl text-center mt-4 text-text-muted opacity-0 animate-fade-in" style={{ animationDelay: "0.5s" }}>14-Year-Old Developer</p>
           </header>
 
           <main class="container mx-auto px-4 py-8">
@@ -39,7 +39,7 @@ export default function Home() {
                 <div class="bg-primary-light rounded-2xl p-8 shadow-xl border border-accent/20 backdrop-blur-md">
                   <h2 class="text-3xl font-bold mb-4 text-white">Hey there! 👋</h2>
                   <p class="text-lg mb-6">
-                    I'm a passionate young developer exploring the world of coding. 
+                    I'm a passionate young developer exploring the world of coding.
                     I love working with Python, AI, C++, Linux, and creating awesome games with Godot!
                   </p>
                   <div class="flex flex-wrap gap-3">
@@ -51,15 +51,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div class="w-full md:w-1/2 opacity-0 animate-slide-in" style="animation-delay: 0.3s;">
+              <div class="w-full md:w-1/2 opacity-0 animate-slide-in" style={{ animationDelay: "0.3s" }}>
                 <div class="flex justify-center">
                   <div class="relative w-64 h-64 rounded-full overflow-hidden border-4 border-accent/50 shadow-xl">
                     <img src="/images/profile.png" alt="Asaadzx" class="w-full h-full object-cover" />
-                  </div>
-                </div>4">
-                  <div class="absolute inset-0 bg-gradient-to-r from-accent to-accent-light rounded-full blur-xl opacity-30 animate-pulse"></div>
-                  <div class="relative bg-primary-light border-2 border-accent overflow-hidden rounded-full w-full h-full flex items-center justify-center">
-                    <span class="text-6xl">👨‍💻</span>
                   </div>
                 </div>
               </div>
@@ -67,13 +62,13 @@ export default function Home() {
 
             {/* Projects Section */}
             <section id="projects" class="mb-20">
-              <h2 class="text-3xl font-bold mb-8 text-center opacity-0 animate-fade-in" style={{animationDelay: "0.6s"}}>
+              <h2 class="text-3xl font-bold mb-8 text-center opacity-0 animate-fade-in" style={{ animationDelay: "0.6s" }}>
                 {/* Project section comment: Displaying my latest projects with interactive elements */}
                 My Projects
               </h2>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
                 {/* Project Card 1 - Pixel Adventure */}
-                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style={{animationDelay: "0.7s"}}>
+                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style={{ animationDelay: "0.7s" }}>
                   <div class="aspect-video bg-accent/30 flex items-center justify-center relative group overflow-hidden">
                     {/* Image placeholder - you'll add your own image here */}
                     <div class="w-full h-full">
@@ -97,7 +92,7 @@ export default function Home() {
                 </div>
 
                 {/* Project Card 2 - AI Chat Assistant */}
-                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style={{animationDelay: "0.8s"}}>
+                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style={{ animationDelay: "0.8s" }}>
                   <div class="aspect-video bg-accent/30 flex items-center justify-center relative group">
                     <span class="text-4xl animate-bounce-subtle">🤖</span>
                     <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -117,8 +112,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Project Card 3 - Personal Website */}
-                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.9s;">
+                {/* Project Card 3 - Portfolio Website */}
+                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in" style={{ animationDelay: "0.9s" }}>
                   <div class="aspect-video bg-accent/30 flex items-center justify-center relative group">
                     <span class="text-4xl animate-bounce-subtle">🌐</span>
                     <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -139,7 +134,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div class="mt-12 text-center opacity-0 animate-fade-in" style="animation-delay: 1s;">
+              <div class="mt-12 text-center opacity-0 animate-fade-in" style={{ animationDelay: "1s" }}>
                 <a href="#" class="inline-block px-8 py-3 bg-accent hover:bg-accent-light rounded-full text-white font-bold transition-all transform hover:scale-105 shadow-lg animate-pulse-glow">
                   View All Projects
                 </a>
@@ -147,20 +142,20 @@ export default function Home() {
             </section>
 
             {/* Links Section */}
-            <section class="opacity-0 animate-fade-in" style={{animationDelay: "1.8s"}}>
+            <section class="opacity-0 animate-fade-in" style={{ animationDelay: "1.8s" }}>
               <h2 class="text-3xl font-bold mb-8 text-center">Find Me Online</h2>
               <div class="flex flex-wrap justify-center gap-6">
-                <a href="https://github.com/asaadzx" target="_blank" rel="noopener noreferrer" 
+                <a href="https://github.com/asaadzx" target="_blank" rel="noopener noreferrer"
                   class="flex items-center gap-2 bg-primary-light px-6 py-4 rounded-xl hover:bg-accent/20 border border-accent/30 transition-all duration-300 transform hover:scale-105">
                   <img src="/github.svg" alt="GitHub" class="w-8 h-8" />
                   <span>GitHub</span>
                 </a>
-                <a href="https://asaadzx.itch.io" target="_blank" rel="noopener noreferrer" 
+                <a href="https://asaadzx.itch.io" target="_blank" rel="noopener noreferrer"
                   class="flex items-center gap-2 bg-primary-light px-6 py-4 rounded-xl hover:bg-accent/20 border border-accent/30 transition-all duration-300 transform hover:scale-105">
                   <img src="/itch.svg" alt="Itch.io" class="w-8 h-8" />
                   <span>Itch.io</span>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" 
+                <a href="#" target="_blank" rel="noopener noreferrer"
                   class="flex items-center gap-2 bg-primary-light px-6 py-4 rounded-xl hover:bg-accent/20 border border-accent/30 transition-all duration-300 transform hover:scale-105">
                   <img src="/discord.svg" alt="Discord" class="w-8 h-8" />
                   <span>Discord</span>
