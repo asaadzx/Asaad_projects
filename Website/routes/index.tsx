@@ -10,8 +10,9 @@ export default function Home() {
       <div class="min-h-screen bg-primary text-text-DEFAULT">
         {/* Background elements */}
         <div class="fixed inset-0 z-0 overflow-hidden">
-          <div class="absolute top-20 left-10 w-48 h-48 bg-accent/20 rounded-full filter blur-3xl animate-float"></div>
-          <div class="absolute bottom-20 right-10 w-64 h-64 bg-accent-light/20 rounded-full filter blur-3xl animate-float" style="animation-delay: 2s;"></div>
+          <div class="absolute inset-0 w-full h-full">
+            <img src="/images/snow.gif" alt="Snow animation" class="object-cover w-full h-full opacity-40" />
+          </div>
         </div>
 
         {/* Content */}
@@ -51,7 +52,11 @@ export default function Home() {
                 </div>
               </div>
               <div class="w-full md:w-1/2 opacity-0 animate-slide-in" style="animation-delay: 0.3s;">
-                <div class="relative mx-auto w-64 h-64">
+                <div class="flex justify-center">
+                  <div class="relative w-64 h-64 rounded-full overflow-hidden border-4 border-accent/50 shadow-xl">
+                    <img src="/images/profile.png" alt="Asaadzx" class="w-full h-full object-cover" />
+                  </div>
+                </div>4">
                   <div class="absolute inset-0 bg-gradient-to-r from-accent to-accent-light rounded-full blur-xl opacity-30 animate-pulse"></div>
                   <div class="relative bg-primary-light border-2 border-accent overflow-hidden rounded-full w-full h-full flex items-center justify-center">
                     <span class="text-6xl">👨‍💻</span>
@@ -69,8 +74,11 @@ export default function Home() {
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
                 {/* Project Card 1 - Pixel Adventure */}
                 <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.7s;">
-                  <div class="aspect-video bg-accent/30 flex items-center justify-center relative group">
-                    <span class="text-4xl animate-bounce-subtle">🎮</span>
+                  <div class="aspect-video bg-accent/30 flex items-center justify-center relative group overflow-hidden">
+                    {/* Image placeholder - you'll add your own image here */}
+                    <div class="w-full h-full">
+                      {/* This is where you'll add your project image */}
+                    </div>
                     <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div class="p-6">

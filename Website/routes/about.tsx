@@ -10,8 +10,9 @@ export default function About() {
       <div class="min-h-screen bg-primary text-text-DEFAULT">
         {/* Background elements */}
         <div class="fixed inset-0 z-0 overflow-hidden">
-          <div class="absolute top-20 right-10 w-64 h-64 bg-accent/20 rounded-full filter blur-3xl animate-float"></div>
-          <div class="absolute bottom-10 left-20 w-48 h-48 bg-accent-light/20 rounded-full filter blur-3xl animate-float" style="animation-delay: 3s;"></div>
+          <div class="absolute inset-0 w-full h-full">
+            <img src="/images/snow.gif" alt="Snow animation" class="object-cover w-full h-full opacity-40" />
+          </div>
         </div>
 
         {/* Content */}
