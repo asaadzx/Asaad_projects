@@ -97,7 +97,7 @@ export default function Home() {
                 </div>
 
                 {/* Project Card 2 - AI Chat Assistant */}
-                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.8s;">
+                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style={{animationDelay: "0.8s"}}>
                   <div class="aspect-video bg-accent/30 flex items-center justify-center relative group">
                     <span class="text-4xl animate-bounce-subtle">🤖</span>
                     <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
