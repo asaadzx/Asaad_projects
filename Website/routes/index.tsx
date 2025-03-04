@@ -221,7 +221,7 @@ export default function Home() {
                   <img src="/itch.svg" alt="Itch.io" class="w-8 h-8" />
                   <span>Itch.io</span>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" 
+                <a href="https://discordapp.com/users/913099850982248528" target="_blank" rel="noopener noreferrer" 
                   class="flex items-center gap-2 bg-primary-light px-6 py-4 rounded-xl hover:bg-accent/20 border border-accent/30 transition-all duration-300 transform hover:scale-105">
                   <img src="/discord.svg" alt="Discord" class="w-8 h-8" />
                   <span>Discord</span>

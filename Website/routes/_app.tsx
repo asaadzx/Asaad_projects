@@ -15,6 +15,9 @@ export default function App({ Component }: AppProps) {
           html {
             scroll-behavior: smooth;
           }
+          #cursor-glow {
+            transition: left 0.1s ease, top 0.1s ease, display 0.1s ease;
+          }
         `}</style>
         <script src="/js/smooth-scroll.js" defer></script>
       </Head>
@@ -31,12 +34,16 @@ export default function App({ Component }: AppProps) {
             // Cursor glow effect
             window.addEventListener('DOMContentLoaded', () => {
               const cursorGlow = document.getElementById('cursor-glow');
+              let timeoutId;
 
               document.addEventListener('mousemove', function(e) {
                 if (cursorGlow) {
-                  cursorGlow.style.left = (e.clientX - 80) + 'px';
-                  cursorGlow.style.top = (e.clientY - 80) + 'px';
-                  cursorGlow.style.display = 'block';
+                  clearTimeout(timeoutId);
+                  timeoutId = setTimeout(() => {
+                    cursorGlow.style.left = (e.clientX - 40) + 'px';
+                    cursorGlow.style.top = (e.clientY - 10) + 'px';
+                    cursorGlow.style.display = 'block';
+                  }, 10); // Adjust the delay as needed
                 }
               });
             });
