@@ -5,4 +5,15 @@ run = "deno task start"
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "deno task start"]
+run = ["sh", "-c", "cd Website && deno run -A main.ts"]
+
+[workflows]
+runButton = "Start website"
+
+[[workflows.workflow]]
+name = "Start website"
+author = 40125466
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd Website && deno task start"
