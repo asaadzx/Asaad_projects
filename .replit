@@ -18,3 +18,7 @@ author = 40125466
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "cd Website && deno task start"
+
+[[ports]]
+localPort = 8000
+externalPort = 80
