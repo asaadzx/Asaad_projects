@@ -1,28 +1,32 @@
 import { Head } from "$fresh/runtime.ts";
 
+/**
+ * AboutPage Component - Displays detailed information about the developer
+ * Includes skills, learning journey, and personal background
+ */
 export default function About() {
   return (
     <>
       <Head>
         <title>About Me | Asaadzx</title>
       </Head>
-      <div class="min-h-screen bg-primary text-text-DEFAULT">
-        {/* Background elements */}
-        <div class="fixed inset-0 z-0 overflow-hidden">
-          <div class="absolute inset-0 w-full h-full">
-            <img src="/images/snow.gif" alt="Snow animation" class="object-cover w-full h-full opacity-40" />
+      <div class="about-page min-h-screen bg-primary text-text-DEFAULT">
+        {/* Animated Background - Consistent across all pages */}
+        <div class="page-background fixed inset-0 z-0 overflow-hidden">
+          <div class="background-image-wrapper absolute inset-0 w-full h-full">
+            <img src="/images/snow.gif" alt="Snow animation" class="background-image object-cover w-full h-full opacity-40" />
           </div>
         </div>
 
-        {/* Content */}
-        <div class="relative z-10">
-          {/* Glass navbar - sticky top */}
-          <nav class="sticky top-0 backdrop-blur-lg bg-primary-light/60 border-b border-accent/20 shadow-lg px-4 py-4 flex justify-between items-center z-50">
-            <a href="/" class="text-2xl font-bold text-white">Asaadzx</a>
-            <div class="flex gap-6">
-              <a href="/" class="text-text-muted hover:text-white transition-colors">Home</a>
-              <a href="/about" class="text-white font-medium border-b-2 border-accent">About</a>
-              <a href="/#projects" class="text-text-muted hover:text-white transition-colors">Projects</a>
+        {/* Main Content Container - All visible content sits here */}
+        <div class="content-wrapper relative z-10">
+          {/* Navigation Bar - Glass effect navbar with links to main sections */}
+          <nav class="main-navbar sticky top-0 backdrop-blur-lg bg-primary-light/60 border-b border-accent/20 shadow-lg px-4 py-4 flex justify-between items-center z-50">
+            <a href="/" class="site-logo text-2xl font-bold text-white">Asaadzx</a>
+            <div class="nav-links flex gap-6">
+              <a href="/" class="nav-link text-text-muted hover:text-white transition-colors">Home</a>
+              <a href="/about" class="nav-link nav-link--active text-white font-medium border-b-2 border-accent">About</a>
+              <a href="/#projects" class="nav-link text-text-muted hover:text-white transition-colors">Projects</a>
             </div>
           </nav>
 
