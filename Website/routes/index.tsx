@@ -7,11 +7,11 @@ export default function Home() {
         <title>Asaadzx - Young Developer</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       </Head>
-      <div class="min-h-screen bg-primary text-text-DEFAULT">
+      <div className="min-h-screen bg-primary text-text-DEFAULT">
         {/* Background elements */}
-        <div class="fixed inset-0 z-0 overflow-hidden">
-          <div class="absolute inset-0 w-full h-full">
-            <img src="/images/snow.gif" alt="Snow animation" class="object-cover w-full h-full opacity-40" />
+        <div className="fixed inset-0 z-0 overflow-hidden">
+          <div className="absolute inset-0 w-full h-full">
+            <img src="/images/snow.gif" alt="Snow animation" className="object-cover w-full h-full opacity-40" />
           </div>
         </div>
 

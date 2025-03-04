@@ -12,12 +12,12 @@ export default function App({ Component }: AppProps) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
       </head>
-      <body class="bg-gray-900 text-white min-h-screen">
+      <body className="bg-gray-900 text-white min-h-screen">
         {/* Cursor glow effect */}
-        <div id="cursor-glow" class="fixed w-60 h-60 rounded-full pointer-events-none mix-blend-screen filter blur-xl opacity-80 bg-accent-light z-50 hidden animate-pulse-glow"></div>
+        <div id="cursor-glow" className="fixed w-60 h-60 rounded-full pointer-events-none mix-blend-screen filter blur-xl opacity-80 bg-accent-light z-50 hidden animate-pulse-glow"></div>
 
-        <div id="particles-js" class="fixed inset-0 z-0"></div>
-        <div class="relative z-10">
+        <div id="particles-js" className="fixed inset-0 z-0"></div>
+        <div className="relative z-10">
           <Component />
         </div>
 
