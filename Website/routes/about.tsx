@@ -1,44 +1,48 @@
-
 import { Head } from "$fresh/runtime.ts";
 
+/**
+ * AboutPage Component - Displays detailed information about the developer
+ * Includes skills, learning journey, and personal background
+ */
 export default function About() {
   return (
     <>
       <Head>
         <title>About Me | Asaadzx</title>
       </Head>
-      <div class="min-h-screen bg-primary text-text-DEFAULT">
-        {/* Background elements */}
-        <div class="fixed inset-0 z-0 overflow-hidden">
-          <div class="absolute top-20 right-10 w-64 h-64 bg-accent/20 rounded-full filter blur-3xl animate-float"></div>
-          <div class="absolute bottom-10 left-20 w-48 h-48 bg-accent-light/20 rounded-full filter blur-3xl animate-float" style="animation-delay: 3s;"></div>
+      <div class="about-page min-h-screen bg-primary text-text-DEFAULT">
+        {/* Animated Background - Consistent across all pages */}
+        <div class="page-background fixed inset-0 z-0 overflow-hidden">
+          <div class="background-image-wrapper absolute inset-0 w-full h-full">
+            <img src="/images/snow.gif" alt="Snow animation" class="background-image object-cover w-full h-full opacity-40" />
+          </div>
         </div>
 
-        {/* Content */}
-        <div class="relative z-10">
-          {/* Glass navbar - sticky top */}
-          <nav class="sticky top-0 backdrop-blur-lg bg-primary-light/60 border-b border-accent/20 shadow-lg px-4 py-4 flex justify-between items-center z-50">
-            <a href="/" class="text-2xl font-bold text-white">Asaadzx</a>
-            <div class="flex gap-6">
-              <a href="/" class="text-text-muted hover:text-white transition-colors">Home</a>
-              <a href="/about" class="text-white font-medium border-b-2 border-accent">About</a>
-              <a href="/#projects" class="text-text-muted hover:text-white transition-colors">Projects</a>
+        {/* Main Content Container - All visible content sits here */}
+        <div class="content-wrapper relative z-10">
+          {/* Navigation Bar - Glass effect navbar with links to main sections */}
+          <nav class="main-navbar sticky top-0 backdrop-blur-lg bg-primary-light/60 border-b border-accent/20 shadow-lg px-4 py-4 flex justify-between items-center z-50">
+            <a href="/" class="site-logo text-2xl font-bold text-white">Asaadzx</a>
+            <div class="nav-links flex gap-6">
+              <a href="/" class="nav-link text-text-muted hover:text-white transition-colors">Home</a>
+              <a href="/about" class="nav-link nav-link--active text-white font-medium border-b-2 border-accent">About</a>
+              <a href="/#projects" class="nav-link text-text-muted hover:text-white transition-colors">Projects</a>
             </div>
           </nav>
-          
+
           <header class="container mx-auto px-4 py-8 mt-6">
             {/* About page header - adding comments as requested */}
           </header>
-          
+
           <main class="container mx-auto px-4 py-8">
             {/* Main heading with animation */}
             <h1 class="text-4xl font-bold mb-12 text-center opacity-0 animate-fade-in">About Me</h1>
-            
+
             {/* About me section with border glow effect */}
             <div class="bg-primary-light rounded-2xl p-6 md:p-8 shadow-xl border border-accent/20 mb-12 opacity-0 animate-slide-in relative overflow-hidden">
               {/* Decorative background element */}
               <div class="absolute -right-20 -bottom-20 w-40 h-40 bg-accent/10 rounded-full filter blur-xl"></div>
-              
+
               <h2 class="text-2xl font-bold mb-4 text-white relative z-10">Who Am I?</h2>
               <p class="text-base md:text-lg mb-4 relative z-10">
                 {/* Personal introduction with skills highlight */}
@@ -52,45 +56,45 @@ export default function About() {
                 creating amazing things with code!
               </p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div class="bg-primary-light rounded-2xl p-8 shadow-xl border border-accent/20 opacity-0 animate-slide-in" style="animation-delay: 0.3s;">
+              <div class="bg-primary-light rounded-2xl p-8 shadow-xl border border-accent/20 opacity-0 animate-slide-in" style={{animationDelay: "0.3s"}}>
                 <h2 class="text-2xl font-bold mb-4 text-white">My Skills</h2>
                 <ul class="space-y-4">
                   <li class="flex items-center">
                     <span class="w-32">Python</span>
                     <div class="w-full bg-primary rounded-full h-2.5">
-                      <div class="bg-accent h-2.5 rounded-full" style="width: 90%"></div>
+                      <div class="bg-accent h-2.5 rounded-full" style={{width: "90%"}}></div>
                     </div>
                   </li>
                   <li class="flex items-center">
                     <span class="w-32">C++</span>
                     <div class="w-full bg-primary rounded-full h-2.5">
-                      <div class="bg-accent h-2.5 rounded-full" style="width: 75%"></div>
+                      <div class="bg-accent h-2.5 rounded-full" style={{width: "75%"}}></div>
                     </div>
                   </li>
                   <li class="flex items-center">
                     <span class="w-32">Linux</span>
                     <div class="w-full bg-primary rounded-full h-2.5">
-                      <div class="bg-accent h-2.5 rounded-full" style="width: 80%"></div>
+                      <div class="bg-accent h-2.5 rounded-full" style={{width: "80%"}}></div>
                     </div>
                   </li>
                   <li class="flex items-center">
                     <span class="w-32">AI/ML</span>
                     <div class="w-full bg-primary rounded-full h-2.5">
-                      <div class="bg-accent h-2.5 rounded-full" style="width: 65%"></div>
+                      <div class="bg-accent h-2.5 rounded-full" style={{width: "65%"}}></div>
                     </div>
                   </li>
                   <li class="flex items-center">
                     <span class="w-32">Godot</span>
                     <div class="w-full bg-primary rounded-full h-2.5">
-                      <div class="bg-accent h-2.5 rounded-full" style="width: 70%"></div>
+                      <div class="bg-accent h-2.5 rounded-full" style={{width: "70%"}}></div>
                     </div>
                   </li>
                 </ul>
               </div>
-              
-              <div class="bg-primary-light rounded-2xl p-8 shadow-xl border border-accent/20 opacity-0 animate-slide-in" style="animation-delay: 0.6s;">
+
+              <div class="bg-primary-light rounded-2xl p-8 shadow-xl border border-accent/20 opacity-0 animate-slide-in" style={{animationDelay: "0.6s"}}>
                 <h2 class="text-2xl font-bold mb-4 text-white">Learning Journey</h2>
                 <div class="space-y-4">
                   <div class="border-l-2 border-accent pl-4">
@@ -116,8 +120,8 @@ export default function About() {
                 </div>
               </div>
             </div>
-            
-            <div class="bg-primary-light rounded-2xl p-8 shadow-xl border border-accent/20 mb-12 opacity-0 animate-fade-in" style="animation-delay: 0.9s;">
+
+            <div class="bg-primary-light rounded-2xl p-8 shadow-xl border border-accent/20 mb-12 opacity-0 animate-fade-in" style={{animationDelay: "0.9s"}}>
               <h2 class="text-2xl font-bold mb-4 text-white">My Goals</h2>
               <ul class="space-y-2">
                 <li class="flex items-start">
@@ -143,7 +147,7 @@ export default function About() {
               </ul>
             </div>
           </main>
-          
+
           <footer class="container mx-auto px-4 py-8 text-center text-text-muted border-t border-accent/10 mt-12">
             <p>© 2025 Asaadzx | Young Developer & Creator</p>
           </footer>

@@ -1,25 +1,33 @@
-
 import { type Config } from "tailwindcss";
 
+/**
+ * Tailwind CSS Configuration
+ * 
+ * This configuration defines the styling system for the entire website:
+ * - Custom color palette with primary, accent, and text colors
+ * - Animation definitions for various interactive elements
+ * - Content paths for where Tailwind should look for class names
+ */
 export default {
   content: [
-    "{routes,islands,components}/**/*.{ts,tsx,js,jsx}",
+    "{routes,islands,components}/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
+      // Color System - Dark theme with blue accents
       colors: {
         primary: {
-          DEFAULT: '#0d1b2a',
-          light: '#1b263b',
+          DEFAULT: '#0B0E14', // Dark background
+          light: '#161B22',   // Slightly lighter background for cards
         },
         accent: {
-          DEFAULT: '#0466c8',
-          light: '#0096c7',
+          DEFAULT: '#70c1ff', // Primary blue accent
+          light: '#98d4ff',   // Lighter blue for hover states
         },
         text: {
-          DEFAULT: '#e0e1dd',
-          muted: '#adb5bd',
-        }
+          DEFAULT: '#edf2f7', // Primary text color
+          muted: '#a0aec0',   // Secondary/muted text color
+        },
       },
       animation: {
         'float': 'float 3s ease-in-out infinite',
