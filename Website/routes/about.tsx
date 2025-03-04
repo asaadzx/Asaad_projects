@@ -145,7 +145,7 @@ export default function About() {
           </main>
           
           <footer class="container mx-auto px-4 py-8 text-center text-text-muted border-t border-accent/10 mt-12">
-            <p>© 2023 Asaadzx | Young Developer & Creator</p>
+            <p>© 2025 Asaadzx | Young Developer & Creator</p>
           </footer>
         </div>
       </div>
