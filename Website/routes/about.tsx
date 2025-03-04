@@ -117,6 +117,10 @@ export default function About() {
                     <div class="text-accent font-bold">2023</div>
                     <div>Began creating games with Godot Engine</div>
                   </div>
+                  <div class="border-l-2 border-accent pl-4">
+                    <div class="text-accent font-bold">2024 - 2025</div>
+                    <div>building cool projects</div>
+                  </div>
                 </div>
               </div>
             </div>
