@@ -1,0 +1,8 @@
+modules = ["web", "deno-2"]
+run = "deno task start"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "deno task start"]
