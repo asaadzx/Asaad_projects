@@ -47,6 +47,14 @@ export default function Projects() {
       link: "",
       github: "https://github.com/asaadzx/morse-Translator-cpp"
     },
+    {
+      title: "ACII ARTIEST",
+      description: "ACII ARTIEST made with C++ and python ",
+      image: "images/Projects/Acii-art.jpeg",
+      tags: ["C++", "Linux", "Bash", "Python"],
+      link: "",
+      github: "https://github.com/asaadzx/ACII-Arteitest"
+    },
   ];
 
   return (
