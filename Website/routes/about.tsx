@@ -26,7 +26,7 @@ export default function About() {
             <div class="nav-links flex gap-6">
               <a href="/" class="nav-link text-text-muted hover:text-white transition-colors">Home</a>
               <a href="/about" class="nav-link nav-link--active text-white font-medium border-b-2 border-accent">About</a>
-              <a href="/#projects" class="nav-link text-text-muted hover:text-white transition-colors">Projects</a>
+              <a href="/projects" class="nav-link text-text-muted hover:text-white transition-colors">Projects</a>
             </div>
           </nav>
 

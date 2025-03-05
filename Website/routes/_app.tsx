@@ -1,3 +1,4 @@
+// deno-lint-ignore-file react-no-danger
 import { AppProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
 
@@ -26,7 +27,7 @@ export default function App({ Component }: AppProps) {
         <div id="cursor-glow" class="fixed w-60 h-60 rounded-full pointer-events-none mix-blend-screen filter blur-xl opacity-80 bg-accent-light z-50 hidden animate-pulse-glow"></div>
 
         <div id="particles-js" class="fixed inset-0 z-0"></div>
-        <div class="relative z-10">
+        <div class="relative z-5">
           <Component />
         </div>
 
@@ -40,8 +41,8 @@ export default function App({ Component }: AppProps) {
                 if (cursorGlow) {
                   clearTimeout(timeoutId);
                   timeoutId = setTimeout(() => {
-                    cursorGlow.style.left = (e.clientX - 40) + 'px';
-                    cursorGlow.style.top = (e.clientY - 10) + 'px';
+                    cursorGlow.style.left = (e.clientX - 10) + 'px';
+                    cursorGlow.style.top = (e.clientY - 5) + 'px';
                     cursorGlow.style.display = 'block';
                   }, 10); // Adjust the delay as needed
                 }

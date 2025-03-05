@@ -22,7 +22,7 @@ export default function Home() {
               <div class="flex gap-6">
                 <a href="/" class="text-white font-medium border-b-2 border-accent">Home</a>
                 <a href="/about" class="text-text-muted hover:text-white transition-colors">About</a>
-                <a href="#projects" class="text-text-muted hover:text-white transition-colors">Projects</a>
+                <a href="/projects" class="text-text-muted hover:text-white transition-colors">Projects</a>
               </div>
             </nav>
             <div class="overflow-hidden flex justify-center">
@@ -95,7 +95,7 @@ export default function Home() {
                     <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2 text-white">AI Learning Assistant Model</h3>
+                    <h3 class="text-xl font-bold mb-2 text-white">AI Model</h3>
                     <p class="text-text-muted mb-4">A Python-based AI application that helps programer.</p>
                     <div class="flex justify-between items-end">
                       <div class="flex flex-wrap gap-2">
@@ -108,52 +108,8 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-
-                {/* Project Card 3 - Flutter app */}
-                <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.9s;">
-                  <div class="aspect-video bg-accent/30 flex items-center justify-center relative group">
-                    {/* <span class="text-4xl animate-bounce-subtle">🌐</span> */}
-                    <img src="images/Projects/Flutter-ToDo.jpg" alt="" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2 text-white">Flutter TODOs app</h3>
-                    <p class="text-text-muted mb-4">Flutter Todos app.</p>
-                    <div class="flex justify-between items-end">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-primary text-xs rounded">Flutter</span>
-                        <span class="px-2 py-1 bg-primary text-xs rounded">dart</span>
-                      </div>
-                      <a href="https://github.com/asaadzx/flutter-learning-journy" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-accent/50">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-              {/* Project Card 4 - C++ Shell */}
-              <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.9s;">
-                  <div class="aspect-video bg-accent/30 flex items-center justify-center relative group">
-                    {/* <span class="text-4xl animate-bounce-subtle">🌐</span> */}
-                    <img src="images/Projects/Cpp-shell.jpg" alt="" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2 text-white">C++ Shell</h3>
-                    <p class="text-text-muted mb-4">simple C++ Shell made with c++.</p>
-                    <div class="flex justify-between items-end">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-primary text-xs rounded">C++</span>
-                        <span class="px-2 py-1 bg-primary text-xs rounded">Bash</span>
-                      </div>
-                      <a href="https://github.com/asaadzx/bestShell" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-accent/50">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
                
-              {/* Project Card 5 - Acii art */}
+              {/* Project Card 3 - Acii art */}
                 <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.9s;">
                   <div class="aspect-video bg-accent/30 flex items-center justify-center relative group">
                     {/* <span class="text-4xl animate-bounce-subtle">🌐</span> */}
@@ -175,33 +131,11 @@ export default function Home() {
                   </div>
                 </div>
 
-              {/* Project Card 6 - MORAS traslator */}
-              <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.9s;">
-                  <div class="aspect-video bg-accent/30 flex items-center justify-center relative group">
-                    {/* <span class="text-4xl animate-bounce-subtle">🌐</span> */}
-                    <img src="images/Projects/OIG4.jpg" alt="" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2 text-white">Moras translator</h3>
-                    <p class="text-text-muted mb-4">Moras translator made with c++.</p>
-                    <div class="flex justify-between items-end">
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-primary text-xs rounded">C++</span>
-                        <span class="px-2 py-1 bg-primary text-xs rounded">bash</span>
-                      </div>
-                      <a href="https://github.com/asaadzx/morse-Translator-cpp" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-accent/50">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
               </div>
 
 
               <div class="mt-12 text-center opacity-0 animate-fade-in" style="animation-delay: 1s;">
-                <a href="#" class="inline-block px-8 py-3 bg-accent hover:bg-accent-light rounded-full text-white font-bold transition-all transform hover:scale-105 shadow-lg animate-pulse-glow">
+                <a href="/projects" class="inline-block px-8 py-3 bg-accent hover:bg-accent-light rounded-full text-white font-bold transition-all transform hover:scale-105 shadow-lg animate-pulse-glow">
                   View All Projects
                 </a>
               </div>
@@ -225,6 +159,11 @@ export default function Home() {
                   class="flex items-center gap-2 bg-primary-light px-6 py-4 rounded-xl hover:bg-accent/20 border border-accent/30 transition-all duration-300 transform hover:scale-105">
                   <img src="/discord.svg" alt="Discord" class="w-8 h-8" />
                   <span>Discord</span>
+                </a>
+                <a href="https://twitter.com/Asaad123TY" target="_blank" rel="noopener noreferrer" 
+                  class="flex items-center gap-2 bg-primary-light px-6 py-4 rounded-xl hover:bg-accent/20 border border-accent/30 transition-all duration-300 transform hover:scale-105">
+                  <img src="/twitter.png" alt="Twitter" class="w-8 h-8" />
+                  <span>Twitter</span>
                 </a>
               </div>
             </section>
