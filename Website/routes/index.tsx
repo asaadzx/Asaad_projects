@@ -124,7 +124,7 @@ export default function Home() {
                         <span class="px-2 py-1 bg-primary text-xs rounded">Win11</span>
                         <span class="px-2 py-1 bg-primary text-xs rounded">CMD</span>
                       </div>
-                      <a href="https://github.com/asaadzx/ACII-Arteitest" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-accent/50">
+                      <a href="https://github.com/D3f4ult-dev/SharkOS.org" class="px-4 py-2 bg-accent hover:bg-accent-light rounded-lg text-white font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-accent/50">
                         View Project
                       </a>
                     </div>
