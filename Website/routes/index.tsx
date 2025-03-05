@@ -17,7 +17,7 @@ export default function Home() {
         {/* Content */}
         <div class="relative z-10">
           <header class="container mx-auto px-4 py-8">
-            <nav class="flex justify-between items-center mb-12 sticky top-0 z-50 backdrop-blur-lg bg-primary/50 border-b border-accent/20 shadow-lg">
+            <nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center mb-12 backdrop-blur-lg bg-primary/50 border-b border-accent/20 shadow-lg">
               <a href="/" class="text-2xl font-bold text-white">Asaadzx</a>
               <div class="flex gap-6">
                 <a href="/" class="text-white font-medium border-b-2 border-accent">Home</a>
@@ -25,7 +25,7 @@ export default function Home() {
                 <a href="/projects" class="text-text-muted hover:text-white transition-colors">Projects</a>
               </div>
             </nav>
-            <div class="overflow-hidden flex justify-center">
+            <div class="overflow-hidden flex justify-center mt-20">
               <h1 class="text-5xl md:text-7xl font-bold text-center overflow-hidden whitespace-nowrap border-r-4 border-text-DEFAULT animate-typing">Asaadzx</h1>
             </div>
             <p class="text-xl text-center mt-4 text-text-muted opacity-0 animate-fade-in" style="animation-delay: 0.5s;">14-Year-Old Developer</p>
@@ -54,7 +54,7 @@ export default function Home() {
                 <div class="relative mx-auto w-64 h-64">
                   <div class="absolute inset-0 bg-gradient-to-r from-accent to-accent-light rounded-full blur-xl opacity-30 animate-pulse"></div>
                   <div class="relative bg-primary-light border-2 border-accent overflow-hidden rounded-full w-full h-full flex items-center justify-center">
-                  <img src="images/Best_gecko.jpg" alt="" />
+                    <img src="images/Best_gecko.jpg" alt="" />
                   </div>
                 </div>
               </div>
@@ -63,9 +63,9 @@ export default function Home() {
             {/* Projects Section */}
             <section id="projects" class="mb-20">
               <h2 class="text-3xl font-bold mb-8 text-center opacity-0 animate-fade-in" style="animation-delay: 0.6s;">
-                {/* Project section comment: Displaying my latest projects with interactive elements */}
                 My Projects
               </h2>
+              {/* Project Grid */}
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
                 {/* Project Card 1 - Pixel Adventure */}
                 <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.7s;">
@@ -108,8 +108,8 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-               
-              {/* Project Card 3 - Acii art */}
+
+                {/* Project Card 3 - Acii art */}
                 <div class="bg-primary-light rounded-xl overflow-hidden shadow-xl border border-accent/20 opacity-0 animate-scale-in hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.9s;">
                   <div class="aspect-video bg-accent/30 flex items-center justify-center relative group">
                     {/* <span class="text-4xl animate-bounce-subtle">🌐</span> */}
@@ -132,7 +132,6 @@ export default function Home() {
                 </div>
 
               </div>
-
 
               <div class="mt-12 text-center opacity-0 animate-fade-in" style="animation-delay: 1s;">
                 <a href="/projects" class="inline-block px-8 py-3 bg-accent hover:bg-accent-light rounded-full text-white font-bold transition-all transform hover:scale-105 shadow-lg animate-pulse-glow">
